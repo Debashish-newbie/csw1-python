@@ -67,9 +67,44 @@ public class Q1 {
 			}
 		}
    }
-   public static void binarySearch() {
-	  
-   }
+  static void  binarySearch() {
+
+	Scanner sc = new Scanner(System.in);
+        System.out.print("The number upto which index u want : ");
+
+        int n = sc.nextInt();
+        int[] arr = new int[n];
+
+        System.out.println("Enter the elements in sorted order (for binary search):");
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = sc.nextInt();
+        }
+
+        System.out.println("Enter the key:");
+        int key = sc.nextInt();
+
+    
+    
+        int low = 0;
+        int high = arr.length - 1;
+		int newn ;
+
+        while (low <= high) {
+            int mid = low + (high - low) / 2;
+
+            if (arr[mid] == key) {
+                newn  = mid ;// key found, return index
+            } else if (arr[mid] < key) {
+                low = mid + 1; // search right half
+            } else {
+                high = mid - 1; // search left half
+            }
+        }
+
+        newn = -1; 
+ System.out.println("found at index: "+newn);
+        
+    }
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter what do you want to do: 1 to 5");
