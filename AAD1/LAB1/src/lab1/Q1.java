@@ -117,6 +117,8 @@ public class Q1 {
 		int pref = sc.nextInt();
 		
 		switch(pref) {
+		default:
+			System.out.println("Enter only numbers between 1 ro 5");
 		case 1: sumOfn();
 		break;
 		case 2 : fact();
@@ -128,8 +130,7 @@ public class Q1 {
 		case 5 : binarySearch();
 		break;
 		case 0: break;
-		default:
-			System.out.println("Enter only numbers between 1 ro 5");
+		
 			
 		}
 			

@@ -16,7 +16,7 @@ public class Q4 {
 	}
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+
 		Scanner sc= new Scanner(System.in);
 		System.out.print("The number upto which index u want : ");
 
